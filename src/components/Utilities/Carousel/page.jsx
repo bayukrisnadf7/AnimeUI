@@ -1,7 +1,12 @@
 "use client";
 import { Carousel } from "flowbite-react";
-
+import { CustomFlowbiteTheme } from "flowbite-react";
 export function CarouselView() {
+  const customTheme = CustomFlowbiteTheme = {
+    "indicator": {
+      
+    }
+  }
   return (
     <div className="h-72 w-full">
       <Carousel>

@@ -1,7 +1,7 @@
 import Input from "./Input";
 const Navbar = () => {
   return (
-    <div className="flex justify-between h-16 items-center mx-20">
+    <div className="flex justify-between h-16 items-center mx-14">
       <h1 className="text-2xl font-bold text-primary">TopAnime</h1>
       <ul className="flex gap-5">
         <a className="link-navbar" href="/">
