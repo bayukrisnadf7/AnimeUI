@@ -6,7 +6,8 @@ import AnimeList from "./components/AnimeList/page.jsx";
 import MangaList from "./components/MangaList/page.jsx";
 import HeaderManga from "./components/MangaList/header.jsx";
 import HeaderAnime from "./components/AnimeList/header.jsx";
-import MangaRecommendation from "./components/MangaRecommendation/page.jsx";
+import SeasonNow from "./components/Season/page.jsx";
+import HeaderSeason from "./components/Season/header.jsx";
 function App() {
   return (
     <>
@@ -16,9 +17,10 @@ function App() {
         <HeaderAnime/>
         <AnimeList />
       </div>
-      {/* <div className="mx-14 mt-10">
-        <MangaRecommendation/>
-      </div> */}
+      <div className="mt-10 p-5 bg-slate-200">
+        <HeaderSeason/>
+        <SeasonNow/>
+      </div>
       <div className="mx-14 mt-10">
         <HeaderManga/>
         <MangaList/>
