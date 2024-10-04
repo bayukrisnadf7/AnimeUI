@@ -8,7 +8,7 @@ export function CarouselView() {
   //   }
   // }
   return (
-    <div className="h-72 w-full">
+    <div className="md:h-96 h-44 w-full">
       <Carousel>
         <img src="thumb-1920-1078843.jpg" alt="..." />
         {/* <img src="beautiful-sad-anime-2304-x-864-6xewsjewfugmmy7h.jpg" alt="..." /> */}

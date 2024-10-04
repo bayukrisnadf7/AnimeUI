@@ -1,6 +1,4 @@
 "use client"
-import { useState, useEffect } from "react"
-import { getManga } from "../../services/manga.service"
 import useSWR from "swr"
 const fetcher = (url) => fetch(url).then((res) => res.json())
 const MangaList = () => {
@@ -16,7 +14,7 @@ const MangaList = () => {
               src={manga.images.jpg.image_url}
               width={150}
               height={150}
-              className="rounded-lg max-h-52"
+              className="img rounded-lg max-h-52"
             />
             <p className="text-sm max-w-36 text-center mt-1 font-semibold">
               {manga.title}

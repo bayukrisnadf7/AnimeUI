@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar />
       <CarouselView />
-      <div className="mx-14 mt-10">
+      <div className="md:mx-14 mx-3 mt-10">
         <HeaderAnime/>
         <AnimeList />
       </div>
@@ -21,9 +21,13 @@ function App() {
         <HeaderSeason/>
         <SeasonNow/>
       </div>
-      <div className="mx-14 mt-10">
+      <div className="md:mx-14 mx-3 mt-10">
         <HeaderManga/>
         <MangaList/>
+      </div>
+      <div className="mt-10 p-5 bg-slate-200">
+        <HeaderSeason/>
+        <SeasonNow/>
       </div>
     </>
   );
