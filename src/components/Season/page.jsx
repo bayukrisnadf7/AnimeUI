@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import useSWR from "swr";
 
@@ -17,7 +16,7 @@ const SeasonNow = () => {
               src={manga.images.jpg.image_url}
               width={150}
               height={150}
-              className="rounded-lg max-h-52"
+              className="img rounded-lg max-h-52"
             />
             <p className="text-sm max-w-36 text-center mt-1 font-semibold">
               {manga.title}
