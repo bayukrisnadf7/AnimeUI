@@ -8,7 +8,7 @@ const AnimeList = () => {
   if (error) return <div>Failed to fetch users.</div>;
   if (!data) return <h2>Loading...</h2>;
   return (
-    <div className="grid md:grid-cols-7 grid-cols-2 mt-5 gap-3">
+    <div className="grid md:grid-cols-7 mt-5 gap-3">
       {data.data?.map((anime) => (
         <div key={anime.mal_id} className="flex justify-center"> 
             <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
