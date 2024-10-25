@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Navbar from "../Utilities/Navbar/page";
 const fetcher = (url) => fetch(url).then((res) => res.json());
 const Anime = () => {
-  const {data, error} = useSWR("https://api.jikan.moe/v4/anime", fetcher);
+  const {data, error} = useSWR(`https://api.jikan.moe/v4/anime`, fetcher);
+  // const [page, setPage] = useState(1);
   if (!data) return <Loading />;
   if (error) return <div>Failed to load</div>;
   return (
@@ -27,6 +28,7 @@ const Anime = () => {
         </div>
       ))}
     </div>
+    {/* <Pagination page={page} lastPage={data.pagination?.last_visible_page} setPage={setPage} /> */}
     </>
     
   );
