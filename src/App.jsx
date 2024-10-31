@@ -8,6 +8,7 @@ import HeaderManga from "./components/MangaList/header.jsx";
 import HeaderAnime from "./components/AnimeList/header.jsx";
 import SeasonNow from "./components/Season/page.jsx";
 import HeaderSeason from "./components/Season/header.jsx";
+import Footer from "./components/Utilities/Footer/index.jsx";
 function App() {
   return (
     <>
@@ -29,6 +30,11 @@ function App() {
         <HeaderSeason/>
         <SeasonNow/>
       </div>
+      <div className="md:mx-14 mx-3 mt-10">
+        <HeaderAnime/>
+        <AnimeList />
+      </div>
+      <Footer/>
     </>
   );
 }
